@@ -1,0 +1,214 @@
+treatments:
+  - name: solo
+    factorIds:
+      - bgnDTcFk3JhxQqziK
+      - qBSxZToTa3ezcJPeC
+      - whsffEeW98xs8P5CW
+      - 8zKmjFiC23Qt7QTS8
+      - bSnQZ36whH4XqQGCG
+      - Cek5BHymRvo7BEoM3
+      - o5EAh5rbs5PxPQjwg
+  - name: small-connected
+    factorIds:
+      - DBrJjrn5jpZAHLJ7u
+      - e6FZPamjDGvoCjeCs
+      - whsffEeW98xs8P5CW
+      - 8zKmjFiC23Qt7QTS8
+      - Cek5BHymRvo7BEoM3
+      - fLBQkQc7ZwXC2v5z3
+      - bSnQZ36whH4XqQGCG
+  - factorIds:
+      - bgnDTcFk3JhxQqziK
+      - qBSxZToTa3ezcJPeC
+      - whsffEeW98xs8P5CW
+      - 8zKmjFiC23Qt7QTS8
+      - bSnQZ36whH4XqQGCG
+      - Cek5BHymRvo7BEoM3
+      - o5EAh5rbs5PxPQjwg
+      - 2pF7Q2mHAy8ZCqrPv
+      - 2eETmbH5qQo6tDs2K
+  - factorIds:
+      - DBrJjrn5jpZAHLJ7u
+      - e6FZPamjDGvoCjeCs
+      - whsffEeW98xs8P5CW
+      - 8zKmjFiC23Qt7QTS8
+      - bSnQZ36whH4XqQGCG
+      - Cek5BHymRvo7BEoM3
+      - fLBQkQc7ZwXC2v5z3
+      - 2pF7Q2mHAy8ZCqrPv
+      - 2eETmbH5qQo6tDs2K
+  - name: small-all-connected
+    factorIds:
+      - kFXfPL6h2PDaCJax3
+      - e6FZPamjDGvoCjeCs
+      - whsffEeW98xs8P5CW
+      - 8zKmjFiC23Qt7QTS8
+      - bSnQZ36whH4XqQGCG
+      - Cek5BHymRvo7BEoM3
+      - fLBQkQc7ZwXC2v5z3
+      - 2pF7Q2mHAy8ZCqrPv
+      - 2eETmbH5qQo6tDs2K
+  - name: 3-players-no-rewiring
+    factorIds:
+      - DBrJjrn5jpZAHLJ7u
+      - e6FZPamjDGvoCjeCs
+      - whsffEeW98xs8P5CW
+      - 8zKmjFiC23Qt7QTS8
+      - bSnQZ36whH4XqQGCG
+      - Cek5BHymRvo7BEoM3
+      - o5EAh5rbs5PxPQjwg
+      - 2pF7Q2mHAy8ZCqrPv
+      - 2eETmbH5qQo6tDs2K
+factorTypes:
+  - _id: QFnSYJ8QipDBCtzpf
+    name: playerCount
+    description: The Number of players participating in the given game.
+    required: true
+    type: Integer
+    min: 1
+  - _id: aZvgAiW3edkDJQJxL
+    name: altersCount
+    description: Number of Connections for each player
+    required: false
+    type: Integer
+    min: 0
+    max: 12
+  - _id: zvrozsuAMthTZiaMk
+    name: nGoodPerformers
+    description: 'Fraction of good performers in group (0=all bad, 1=all good)'
+    required: false
+    type: Number
+    min: 0
+    max: 1
+  - _id: ubjoRDa4J6gNudPAb
+    name: nRounds
+    description: number of rounds
+    required: false
+    type: Integer
+    min: 1
+    max: 20
+  - _id: puin2aWsqLwaRqMdq
+    name: stageDuration
+    description: length of the stage in seconds
+    required: false
+    type: Integer
+    min: 5
+    max: 120
+  - _id: gxzjZcArx39TeuSbs
+    name: feedbackRate
+    description: how frequent the feedback is. (1= every round)
+    required: false
+    type: Integer
+    min: 0
+    max: 1
+  - _id: c3mB8E2hu8PLL9eDs
+    name: rewiring
+    description: self-explanatory
+    required: false
+    type: Boolean
+  - _id: QiTg4JgWXPGQtncxv
+    name: peersFeedback
+    description: whether to display feedback or not
+    required: false
+    type: Boolean
+  - _id: mJ5LXeXQxhbSfSssw
+    name: selfFeedback
+    description: self Feedback
+    required: false
+    type: Boolean
+  - _id: XYh63LnkRYz4TQhJd
+    name: centralized
+    description: Use the centralized network?
+    required: false
+    type: Boolean
+factors:
+  - _id: bgnDTcFk3JhxQqziK
+    name: solo
+    value: 1
+    factorTypeId: QFnSYJ8QipDBCtzpf
+  - _id: kFXfPL6h2PDaCJax3
+    name: dyad
+    value: 2
+    factorTypeId: QFnSYJ8QipDBCtzpf
+  - _id: DBrJjrn5jpZAHLJ7u
+    name: trio
+    value: 3
+    factorTypeId: QFnSYJ8QipDBCtzpf
+  - _id: G4oZ3f5zuZtxpZQqh
+    name: largeGroup
+    value: 12
+    factorTypeId: QFnSYJ8QipDBCtzpf
+  - _id: qBSxZToTa3ezcJPeC
+    name: none
+    value: 0
+    factorTypeId: aZvgAiW3edkDJQJxL
+  - _id: XbctyRrNMBbz3X3wF
+    name: few
+    value: 3
+    factorTypeId: aZvgAiW3edkDJQJxL
+  - _id: cWxb8p4w6thbjxpd4
+    name: many
+    value: 8
+    factorTypeId: aZvgAiW3edkDJQJxL
+  - _id: e6FZPamjDGvoCjeCs
+    name: single
+    value: 1
+    factorTypeId: aZvgAiW3edkDJQJxL
+  - _id: ufKmqam8HLbFjYt7z
+    name: bad
+    value: 0
+    factorTypeId: zvrozsuAMthTZiaMk
+  - _id: whsffEeW98xs8P5CW
+    name: good
+    value: 1
+    factorTypeId: zvrozsuAMthTZiaMk
+  - _id: 8zKmjFiC23Qt7QTS8
+    name: three
+    value: 3
+    factorTypeId: ubjoRDa4J6gNudPAb
+  - _id: bSnQZ36whH4XqQGCG
+    name: long
+    value: 60
+    factorTypeId: puin2aWsqLwaRqMdq
+  - _id: Cek5BHymRvo7BEoM3
+    name: allTheTime
+    value: 1
+    factorTypeId: gxzjZcArx39TeuSbs
+  - _id: fLBQkQc7ZwXC2v5z3
+    name: 'true'
+    value: true
+    factorTypeId: c3mB8E2hu8PLL9eDs
+  - _id: o5EAh5rbs5PxPQjwg
+    name: 'false'
+    value: false
+    factorTypeId: c3mB8E2hu8PLL9eDs
+  - _id: 2pF7Q2mHAy8ZCqrPv
+    name: 'true'
+    value: true
+    factorTypeId: QiTg4JgWXPGQtncxv
+  - _id: fDxSnTzZWLLjRedEd
+    name: 'false'
+    value: false
+    factorTypeId: QiTg4JgWXPGQtncxv
+  - _id: 2eETmbH5qQo6tDs2K
+    name: 'true'
+    value: true
+    factorTypeId: mJ5LXeXQxhbSfSssw
+  - _id: PmBixoN97ejZdPXbF
+    name: 'false'
+    value: false
+    factorTypeId: mJ5LXeXQxhbSfSssw
+  - _id: vSpDh577GrNadWkhE
+    name: 'true'
+    value: true
+    factorTypeId: XYh63LnkRYz4TQhJd
+  - _id: uPZj6wLoX5KWLZcfP
+    name: 'false'
+    value: false
+    factorTypeId: XYh63LnkRYz4TQhJd
+lobbyConfigs:
+  - name: simple
+    timeoutType: lobby
+    timeoutInSeconds: 300
+    timeoutStrategy: fail
+    gameLobbyIds: []
