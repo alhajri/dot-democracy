@@ -98,7 +98,7 @@ export default class TaskStimulus extends React.Component {
         stageName={stage.name}
         taskData={{
           answer: task.correctAnswer,
-          answerProportion: difficultlyLvls[player.get("performance")],
+          answerProportion: player.get("performance"),
           dotSpeed: task.dotSpeed,
           nDots: task.nDots
         }}

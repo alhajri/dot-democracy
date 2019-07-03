@@ -96,9 +96,9 @@ const initial_network = {
     const taskSequence = _.shuffle(taskData);
   
     //generate the difficulty levels (i.e., how many good and how many bad performers
-    let performance = Array(players.length).fill("bad");
+    let performance = Array(players.length).fill(game.treatment.badDifficulty);
     performance = performance.fill(
-      "good",
+      game.treatment.goodDifficulty,
       0,
       Math.ceil(game.treatment.nGoodPerformers * players.length)
     );

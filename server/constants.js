@@ -1,7 +1,7 @@
 // The task data can go here
 const N_DOTS = 50; //this is not being used yet!
 const DOT_SPEED = 120;
-const DIFF_LVLS = { bad: 0.1, good: 0.4 };
+const DIFF_LVLS = { bad: 0.1, good: 0.8 };
 
 export const taskData = [
   {
